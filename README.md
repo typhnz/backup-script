@@ -1,4 +1,4 @@
-#Architecture
+## Architecture ##
 
 Network:
 The network cis made up of two machines: a MacOs (host) and a Kali Linux virtual machine running on VMWare.
@@ -13,18 +13,18 @@ Virtual Machine (Kali Linux):
 IP Address: [*]
 Operating System: Kali Linux
 
-##Implementation
+## Implementation ##
 
 Automated Backup:
 The automated backup script is executed on the host machine (MacOs).
 Backups are stored locally on the host machine in the directory defined by the "backup_location" variable.
 Backups are then transferred to a remote server (Kali Linux) using the rsync protocol.
 
-##Best Practices
+## Best Practices ##
 
 Secure Connections: Ensure that SSH connections between the host machine and the virtual machine are secure by using SSH keys and not passwords.
 
-##Required Configurations
+## Required Configurations ##
 
 System (Host Machine - MacOs):
 
@@ -39,7 +39,7 @@ Services:
 
 Ensure that the SSH service is enabled and configured on both the host machine and remote servert to allow remote connections.
 
-##How to
+## How to ##
 
 Backup a new folder:
 Add the absolute path of the folder to the backup script in the "repository" variable.
